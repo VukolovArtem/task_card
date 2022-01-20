@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+:root {
+  font-size: 16px;
+  background-color: rgb(254, 255, 241);
+  font-family: "Spline Sans", sans-serif;
+}
+
+.content {
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  min-height: 150px;
+  position: absolute;
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 2px 2px 7px -1px rgba(12, 12, 13, 0.36);
+}
+
+
+/* ------TEXT_CARDS------- */
+.title-card {
+  position: relative;
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+
+.title-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.title-discount {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+/* ------BUSINES_STYLE_CARD_1------- */
+.card_1 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 189, 154, 1) 0%,
+    rgba(255, 115, 141, 1) 100%
+  );
+}
+
+.card_1:nth-child(1) .title-card::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+/* ------BUSINES_STYLE_CARD_2------- */
+.card_2 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(140, 201, 248, 1) 0%,
+    rgba(58, 162, 233, 1) 100%
+  );
+}
+
+.card_2:nth-child(2) .title-card::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/2.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+/* ------BUSINES_STYLE_CARD_3------- */
+.card_3 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(126, 217, 210, 1) 0%,
+    rgba(4, 207, 183, 1) 100%
+  );
+}
+
+.card_3:nth-child(3) .title-card::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/3.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.card::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffffff44;
+}
+
+.card::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffffff44;
+}
